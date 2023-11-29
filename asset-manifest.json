@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Car-Blanche/static/css/main.7acaea2f.css",
+    "main.js": "/Car-Blanche/static/js/main.44ed5b00.js",
+    "index.html": "/Car-Blanche/index.html",
+    "main.7acaea2f.css.map": "/Car-Blanche/static/css/main.7acaea2f.css.map",
+    "main.44ed5b00.js.map": "/Car-Blanche/static/js/main.44ed5b00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.44ed5b00.js"
+  ]
+}
