@@ -1,17 +1,16 @@
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Home from '../../pages/Home';
+import Favorites from '../../pages/Favorites';
+import Advertisement from 'pages/Advertisement';
+
 const App = () => {
+  const location = useLocation();
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 30,
-        color: '#010101',
-      }}
-    >
-      React homework template
-    </div>
+    <Routes location={location} key={location.pathname}>
+      <Route path="/" element={<Home />} />
+      <Route path="/advertisement" element={<Advertisement />} />
+      <Route path="/advertisement/favorites" element={<Favorites />} />
+    </Routes>
   );
 };
 
