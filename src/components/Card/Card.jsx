@@ -27,7 +27,7 @@ const Card = ({ advertisement }) => {
     description,
     // fuelConsumption,
     // engineSize,
-    // accessories,
+    accessories,
     functionalities,
     rentalPrice,
     rentalCompany,
@@ -81,7 +81,11 @@ const Card = ({ advertisement }) => {
           <Info>{type}</Info>
           <Info>{model}</Info>
           <Info>{id}</Info>
-          <Info>{functionalities[0]}</Info>
+          {functionalities[0] === 'Power liftgate' ? (
+            <Info>Power liftgate</Info>
+          ) : (
+            <Info>{accessories[2]}</Info>
+          )}
         </InfoWrapper>
       </DescriptionWrapper>
       <Button>Learn More</Button>
