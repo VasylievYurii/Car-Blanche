@@ -5,12 +5,16 @@ import {
   ImgWrapper,
   Img,
   FavoriteImg,
+  ButtonFavorite,
   DescriptionWrapper,
   MainTextWrapper,
   MainText,
   InfoWrapper,
   Info,
+  NoImage,
 } from './Card.styled';
+import getAddressArray from 'helpers/getAddressArray';
+import sprite from '../../assets/sprite.svg';
 
 const Card = ({ advertisement }) => {
   const {
@@ -32,40 +36,55 @@ const Card = ({ advertisement }) => {
     // mileage,
   } = advertisement;
 
+  let addressArray = getAddressArray(address);
+
   return (
     <CardWrapper>
       <ImgWrapper>
         <Img src={img} loading="lazy" alt={make} title={description} />
-        <FavoriteImg></FavoriteImg>
+        <NoImage>
+          <use href={`${sprite}#icon-car`} />
+        </NoImage>
       </ImgWrapper>
+
+      <ButtonFavorite type="button">
+        <FavoriteImg>
+          <use href={`${sprite}#icon-favorite`} />
+        </FavoriteImg>
+      </ButtonFavorite>
       <DescriptionWrapper>
         <MainTextWrapper>
           <MainText>
-            {make}&nbsp;
-            <span>{model}</span>, {year}
+            {make}
+            {model === 'Enclave' || model === 'XC90' || model === 'XC60' ? (
+              <span>&nbsp;{model}</span>
+            ) : null}
+            ,&nbsp;{year}
           </MainText>
           <MainText>{rentalPrice}</MainText>
         </MainTextWrapper>
         <InfoWrapper>
-          <Info>{address}</Info>
-          <Info>{rentalCompany}</Info>
-          <Info>?</Info>
+          <Info>{addressArray[1]}</Info>
+          <Info>{addressArray[2]}</Info>
+
+          {rentalCompany === 'Premium Auto Rentals' ? (
+            <Info>Auto Rentals</Info>
+          ) : (
+            <Info>{rentalCompany}</Info>
+          )}
+
+          {id === 9587 || id === 9597 || id === 9598 ? null : (
+            <Info>Premium</Info>
+          )}
+        </InfoWrapper>
+        <InfoWrapper>
           <Info>{type}</Info>
           <Info>{model}</Info>
           <Info>{id}</Info>
-          <Info>{functionalities}</Info>
+          <Info>{functionalities[0]}</Info>
         </InfoWrapper>
       </DescriptionWrapper>
       <Button>Learn More</Button>
-
-      {/* <p>{img}</p> */}
-      {/* <p>{description}</p>
-      <p>{fuelConsumption}</p>
-      <p>{engineSize}</p>
-      <p>{accessories}</p>
-
-      <p>{rentalConditions}</p>
-      <p>{mileage}</p> */}
     </CardWrapper>
   );
 };

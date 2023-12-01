@@ -1,18 +1,23 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 274px;
+
+  &:last-child {
+    margin-top: auto;
+  }
 `;
 
 export const ImgWrapper = styled.div`
-  position: relative;
   overflow: hidden;
   width: 100%;
   height: 268px;
   border-radius: 14px;
   margin-bottom: 14px;
+  background-color: rgba(18, 20, 23, 0.1);
 `;
 
 export const Img = styled.img`
@@ -25,8 +30,22 @@ export const Img = styled.img`
   }
 `;
 
-export const FavoriteImg = styled.svg`
+export const ButtonFavorite = styled.button`
   position: absolute;
+  right: 14px;
+  top: 14px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+`;
+
+export const FavoriteImg = styled.svg`
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.8);
 `;
 
 export const DescriptionWrapper = styled.div`
@@ -38,6 +57,7 @@ export const MainTextWrapper = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
+  margin-bottom: 8px;
 `;
 
 export const MainText = styled.h2`
@@ -55,7 +75,13 @@ export const MainText = styled.h2`
 
 export const InfoWrapper = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  margin-bottom: 4px;
+  width: 100%;
+  justify-content: flex-start;
+
+  &:last-child {
+    margin-bottom: 28px;
+  }
 `;
 
 export const Info = styled.p`
@@ -64,5 +90,22 @@ export const Info = styled.p`
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px; /* 150% */
+  line-height: 18px;
+  padding-right: 6px;
+  margin-right: 6px;
+  border-right: 1px solid rgba(18, 20, 23, 0.1);
+  flex-shrink: 0;
+
+  &:last-child {
+    border-right: none;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+`;
+
+export const NoImage = styled.svg`
+  fill: red;
+  stroke: blue;
+  width: 38px;
+  height: 38px;
 `;
