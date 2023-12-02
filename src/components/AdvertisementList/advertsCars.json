@@ -1,11 +1,11 @@
 [
   {
-    "id": 9582,
+    "id": "9582",
     "year": 2008,
     "make": "Buick",
     "model": "Enclave",
     "type": "SUV",
-    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/buick_enclave.jpg",
+    "img": "https://i.infocar.ua/i/12/1276/1400x936.jpg",
     "description": "The Buick Enclave is a stylish and spacious SUV known for its comfortable ride and luxurious features.",
     "fuelConsumption": "10.5",
     "engineSize": "3.6L V6",
@@ -26,12 +26,12 @@
     "mileage": 5858
   },
   {
-    "id": 9584,
+    "id": "9584",
     "year": 2019,
     "make": "Volvo",
     "model": "XC90",
     "type": "SUV",
-    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc90.jpg",
+    "img": "https://i.infocar.ua/i/12/5878/1400x936.jpg",
     "description": "The Volvo XC90 is a premium SUV that offers exceptional safety, advanced technology, and elegant design.",
     "fuelConsumption": "8.3",
     "engineSize": "2.0L 4-cylinder",
@@ -52,12 +52,12 @@
     "mileage": 5352
   },
   {
-    "id": 9586,
+    "id": "9586",
     "year": 2020,
     "make": "Volvo",
     "model": "XC60",
     "type": "SUV",
-    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc60.webp",
+    "img": "https://media.ed.edmunds-media.com/volvo/xc60-polestar/2020/fd/2020_volvo_xc60-polestar_actf34_fd_823191_815.jpg",
     "description": "The Volvo XC60 is a compact luxury SUV with a beautiful interior, strong performance, and advanced safety features.",
     "fuelConsumption": "7.9",
     "engineSize": "2.0L 4-cylinder",
@@ -78,12 +78,12 @@
     "mileage": 5966
   },
   {
-    "id": 9587,
+    "id": "9587",
     "year": 2006,
     "make": "HUMMER",
     "model": "H2",
     "type": "SUV",
-    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/hummer_h2.webp",
+    "img": "https://www.motorbiscuit.com/wp-content/uploads/2023/04/2006-Hummer-H2-SUT-Riding-on-a-Dirt-Trail.jpg",
     "description": "The HUMMER H2 is a rugged and powerful SUV that stands out with its imposing presence and off-road capabilities.",
     "fuelConsumption": "19.8",
     "engineSize": "6.0L V8",
@@ -104,7 +104,7 @@
     "mileage": 4771
   },
   {
-    "id": 9590,
+    "id": "9590",
     "year": 2016,
     "make": "Subaru",
     "model": "Outback",
@@ -130,7 +130,7 @@
     "mileage": 4061
   },
   {
-    "id": 9591,
+    "id": "9591",
     "year": 2010,
     "make": "Mitsubishi",
     "model": "Outlander",
@@ -156,7 +156,7 @@
     "mileage": 5374
   },
   {
-    "id": 9593,
+    "id": "9593",
     "year": 2014,
     "make": "Nissan",
     "model": "Pathfinder",
@@ -182,7 +182,7 @@
     "mileage": 6282
   },
   {
-    "id": 9596,
+    "id": "9596",
     "year": 2009,
     "make": "Lincoln",
     "model": "Navigator L",
@@ -208,7 +208,7 @@
     "mileage": 6173
   },
   {
-    "id": 9597,
+    "id": "9597",
     "year": 2000,
     "make": "GMC",
     "model": "Yukon Denali",
@@ -234,12 +234,12 @@
     "mileage": 4989
   },
   {
-    "id": 9598,
+    "id": "9598",
     "year": 2007,
     "make": "Hyundai",
     "model": "Tucson",
     "type": "SUV",
-    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/hyundai_tucson.jpg",
+    "img": "https://avtopoiskua.fra1.cdn.digitaloceanspaces.com/pics/94/3495573.webp",
     "description": "The Hyundai Tucson is a reliable and fuel-efficient SUV that combines practicality with a stylish design and a comfortable ride.",
     "fuelConsumption": "8.2",
     "engineSize": "2.0L 4-cylinder",
@@ -260,7 +260,7 @@
     "mileage": 4591
   },
   {
-    "id": 9583,
+    "id": "9583",
     "year": 2006,
     "make": "MINI",
     "model": "Convertible",
@@ -286,7 +286,7 @@
     "mileage": 6275
   },
   {
-    "id": 9606,
+    "id": "9606",
     "year": 2007,
     "make": "Bentley",
     "model": "Azure",
@@ -312,12 +312,12 @@
     "mileage": 4317
   },
   {
-    "id": 9612,
+    "id": "9612",
     "year": 2004,
     "make": "Mercedes-Benz",
     "model": "SL-Class",
     "type": "Convertible",
-    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/mercedes_sl_class.jpg",
+    "img": "https://tech.carta.ua/540x405/upload/photo/21/4678_1.jpeg",
     "description": "The Mercedes-Benz SL-Class is a legendary luxury convertible that offers a perfect blend of thrilling performance, advanced technology, and opulent comfort.",
     "fuelConsumption": "11.8",
     "engineSize": "5.0L V8",
@@ -338,7 +338,7 @@
     "mileage": 5722
   },
   {
-    "id": 9616,
+    "id": "9616",
     "year": 2010,
     "make": "Aston Martin",
     "model": "DBS",
@@ -364,12 +364,12 @@
     "mileage": 6464
   },
   {
-    "id": 9619,
+    "id": "9619",
     "year": 1996,
     "make": "Pontiac",
     "model": "Firebird",
     "type": "Convertible",
-    "img": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/pontiac_firebird.jpg",
+    "img": "https://newoldcars.com/wp-content/uploads/2021/08/1996-pontiac-firebird-formula-ws6-trans-am-6spd-manual-for-sale-classifieds.jpg",
     "description": "The Pontiac Firebird is a classic American muscle car with bold styling, powerful engines, and an iconic presence that captures the essence of the golden era of performance.",
     "fuelConsumption": "15.2",
     "engineSize": "5.7L V8",
@@ -390,7 +390,7 @@
     "mileage": 5091
   },
   {
-    "id": 9629,
+    "id": "9629",
     "year": 2009,
     "make": "Lamborghini",
     "model": "Murcielago",
@@ -416,7 +416,7 @@
     "mileage": 5832
   },
   {
-    "id": 9631,
+    "id": "9631",
     "year": 2011,
     "make": "Audi",
     "model": "A5",
@@ -442,7 +442,7 @@
     "mileage": 4635
   },
   {
-    "id": 9634,
+    "id": "9634",
     "year": 2001,
     "make": "BMW",
     "model": "Z8",
@@ -468,7 +468,7 @@
     "mileage": 5990
   },
   {
-    "id": 9655,
+    "id": "9655",
     "year": 1998,
     "make": "Chevrolet",
     "model": "Camaro",
@@ -494,7 +494,7 @@
     "mileage": 6330
   },
   {
-    "id": 9685,
+    "id": "9685",
     "year": 2006,
     "make": "Mercedes-Benz",
     "model": "SLK-Class",
@@ -520,12 +520,12 @@
     "mileage": 6280
   },
   {
-    "id": 9660,
+    "id": "9660",
     "year": 2020,
     "make": "Chrysler",
     "model": "Voyager",
     "type": "Van/Minivan",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/chrysler_voyager.jpg",
+    "img": "https://hips.hearstapps.com/hmg-prod/images/2020-chrysler-voyager-101-1561643979.jpg",
     "description": "The Chrysler Voyager is a practical and versatile van/minivan that provides comfortable seating, ample cargo space, and a range of convenient features for family-oriented transportation.",
     "fuelConsumption": "8.2",
     "engineSize": "3.6L V6",
@@ -546,12 +546,12 @@
     "mileage": 5807
   },
   {
-    "id": 9630,
+    "id": "9630",
     "year": 2020,
     "make": "Kia",
     "model": "Rio",
     "type": "Hatchback",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_hatchback.jpg",
+    "img": "https://hips.hearstapps.com/hmg-prod/images/2020-kia-rio-mmp-1-1567615682.jpg",
     "description": "The Kia Rio is a compact and fuel-efficient hatchback that offers a blend of affordability, reliability, and practicality, making it an excellent choice for urban commuting and everyday driving.",
     "fuelConsumption": "6.2",
     "engineSize": "1.6L 4-cylinder",
@@ -572,85 +572,7 @@
     "mileage": 4618
   },
   {
-    "id": 9586,
-    "year": 2020,
-    "make": "Volvo",
-    "model": "XC60",
-    "type": "SUV",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/volvo_xc60_2.jpg",
-    "description": "The Volvo XC60 is a luxurious and versatile SUV that combines Scandinavian design, advanced safety features, and a comfortable driving experience, making it an ideal choice for families and adventure enthusiasts.",
-    "fuelConsumption": "8.5",
-    "engineSize": "2.0L 4-cylinder",
-    "accessories": [
-      "Leather upholstery",
-      "Panoramic sunroof",
-      "Harman Kardon premium sound system"
-    ],
-    "functionalities": [
-      "All-Wheel Drive",
-      "City Safety collision avoidance technology",
-      "Power tailgate"
-    ],
-    "rentalPrice": "$150",
-    "rentalCompany": "Premium Car Rentals",
-    "address": "987 Example Road, Dnipro, Ukraine",
-    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6618
-  },
-  {
-    "id": 9618,
-    "year": 2020,
-    "make": "Land Rover",
-    "model": "Range Rover Sport",
-    "type": "SUV",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/land_rover_range_rover_sport.jpg",
-    "description": "The Land Rover Range Rover Sport is a premium SUV that offers a perfect blend of luxury, off-road capability, and dynamic performance, providing a refined driving experience both on and off the road.",
-    "fuelConsumption": "11.8",
-    "engineSize": "3.0L V6",
-    "accessories": [
-      "Premium Windsor leather seats",
-      "Meridian surround sound system",
-      "Adaptive Dynamics suspension"
-    ],
-    "functionalities": [
-      "All-Wheel Drive",
-      "Terrain Response 2 system",
-      "Power-operated gesture tailgate"
-    ],
-    "rentalPrice": "$300",
-    "rentalCompany": "Luxury SUV Rentals",
-    "address": "654 Example Street, Lviv, Ukraine",
-    "rentalConditions": "Minimum age: 25\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 4856
-  },
-  {
-    "id": 9630,
-    "year": 2020,
-    "make": "Kia",
-    "model": "Rio",
-    "type": "Sedan, Hatchback",
-    "photoLink": "https://res.cloudinary.com/ditdqzoio/image/upload/v1687252635/cars/kia_rio_sedan_hatchback.jpg",
-    "description": "The Kia Rio is a versatile and fuel-efficient vehicle available in both sedan and hatchback body styles, offering a comfortable cabin, modern features, and a smooth driving experience, making it an attractive choice for urban commuters.",
-    "fuelConsumption": "6.2",
-    "engineSize": "1.6L 4-cylinder",
-    "accessories": [
-      "Apple CarPlay and Android Auto integration",
-      "Smart Key with Push Button Start",
-      "Automatic climate control"
-    ],
-    "functionalities": [
-      "Front-Wheel Drive",
-      "Electronic Stability Control",
-      "Rearview camera"
-    ],
-    "rentalPrice": "$50",
-    "rentalCompany": "Economy Car Rentals",
-    "address": "321 Example Lane, Kharkiv, Ukraine",
-    "rentalConditions": "Minimum age: 21\nValid driver's license\nSecurity deposit and insurance required",
-    "mileage": 6234
-  },
-  {
-    "id": 3245,
+    "id": "3245",
     "year": 2020,
     "make": "Toyota",
     "model": "Camry",
@@ -668,7 +590,7 @@
     "mileage": 25000
   },
   {
-    "id": 3456,
+    "id": "3456",
     "year": 2018,
     "make": "Honda",
     "model": "Civic",
@@ -689,7 +611,7 @@
     "mileage": 30000
   },
   {
-    "id": 3345,
+    "id": "3345",
     "year": 2022,
     "make": "Ford",
     "model": "Escape",
@@ -711,7 +633,7 @@
     "mileage": 20000
   },
   {
-    "id": 4435,
+    "id": "4435",
     "year": 2019,
     "make": "Chevrolet",
     "model": "Malibu",
@@ -733,7 +655,7 @@
     "mileage": 28000
   },
   {
-    "id": 5456,
+    "id": "5456",
     "year": 2021,
     "make": "Tesla",
     "model": "Model 3",
@@ -755,7 +677,7 @@
     "mileage": 15000
   },
   {
-    "id": 6346,
+    "id": "6346",
     "year": 2017,
     "make": "Nissan",
     "model": "Altima",
@@ -777,7 +699,7 @@
     "mileage": 32000
   },
   {
-    "id": 7146,
+    "id": "7146",
     "year": 2020,
     "make": "Hyundai",
     "model": "Kona",
@@ -799,7 +721,7 @@
     "mileage": 25000
   },
   {
-    "id": 8654,
+    "id": "8654",
     "year": 2019,
     "make": "BMW",
     "model": "X5",
@@ -821,7 +743,7 @@
     "mileage": 18000
   },
   {
-    "id": 9234,
+    "id": "9234",
     "year": 2022,
     "make": "Audi",
     "model": "A4",
@@ -843,7 +765,7 @@
     "mileage": 15000
   },
   {
-    "id": 1046,
+    "id": "1046",
     "year": 2018,
     "make": "Subaru",
     "model": "Outback",
