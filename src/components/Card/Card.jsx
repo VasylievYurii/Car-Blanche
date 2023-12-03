@@ -50,16 +50,12 @@ const Card = ({ advertisement }) => {
   let addressArray = getSplitArray(address, spliterForAddress);
 
   const handleFavorite = () => {
-    console.log('id:', id);
     const favorite = favorites.find((object) => {
-      console.log('object:', object.id);
       return object.id === id;
     });
-    console.log('favorite:', favorite);
     const advert = adverts.find((object) => object.id === id);
     if (!favorite) {
       dispatch(addFavorite(advert));
-      console.log('added');
     } else {
       dispatch(deleteFavorite(favorite._id));
     }

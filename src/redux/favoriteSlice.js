@@ -7,7 +7,6 @@ const handlePending = (state) => {
 };
 
 const handleRejected = (state, { payload }) => {
-  console.log('favoritesSlice error');
   state.isLoading = false;
   state.error = payload;
 };
