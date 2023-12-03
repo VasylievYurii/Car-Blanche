@@ -51,6 +51,9 @@ export const DescriptionWrapper = styled.ul`
   margin-bottom: 4px;
   width: 100%;
   justify-content: flex-start;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 `;
 
 export const DescriptionText = styled.li`
@@ -123,5 +126,29 @@ export const RentalInfo = styled.p`
     font-weight: 600;
     line-height: 18px;
     letter-spacing: -0.24px;
+  }
+`;
+
+export const ButtonLink = styled.a`
+  color: var(--color-main);
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+
+  display: flex;
+  width: fit-content;
+  padding: 12px 50px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background-color: var(--color-accent);
+  transition: background-color 0.3s var(--timing-function);
+  border: none;
+
+  &:hover {
+    background-color: var(--color-hover);
   }
 `;

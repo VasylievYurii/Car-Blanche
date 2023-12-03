@@ -11,10 +11,10 @@ import {
   RentalList,
   RentalItem,
   RentalInfo,
+  ButtonLink,
 } from './CardFull.styled';
 import { useSelector } from 'react-redux';
 import { getAdverts } from 'redux/selectors';
-import Button from 'components/Button';
 import getSplitArray from 'helpers/getSplitArray';
 
 const CardFull = ({ id }) => {
@@ -122,7 +122,7 @@ const CardFull = ({ id }) => {
           </RentalItem>
         </RentalList>
       </div>
-      <Button padding="12px 50px">Rental Car</Button>
+      <ButtonLink href="tel:+380730000000">Rental Car</ButtonLink>
     </CardFullWrapper>
   );
 };

@@ -1,10 +1,16 @@
 import React from 'react';
+import Container from 'components/Container';
+import FavoriteList from 'components/FavoriteList';
+import Header from 'components/Header';
 
 const Favorites = () => {
   return (
-    <div>
-      <p>Favorites</p>
-    </div>
+    <>
+      <Header />
+      <Container>
+        <FavoriteList />
+      </Container>
+    </>
   );
 };
 

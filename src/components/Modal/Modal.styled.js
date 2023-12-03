@@ -9,19 +9,17 @@ export const ModalOverlay = styled.div`
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(8px);
   z-index: 1;
+  overflow: auto;
 `;
 
 export const ModalWindow = styled.div`
   position: absolute;
-  width: 90%;
   top: 50%;
   left: 50%;
   border-radius: 24px;
   transform: translate(-50%, -50%);
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
-  @media screen and (min-width: 768px) {
-    width: auto;
-  }
+  max-height: 90vh;
 `;
 
 export const CloseIconWrapper = styled.button`

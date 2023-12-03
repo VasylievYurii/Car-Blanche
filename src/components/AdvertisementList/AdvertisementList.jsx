@@ -1,22 +1,31 @@
-import React, { useEffect } from 'react';
-import { AdvertisementListStyled } from './AdvertisementList.styled';
-import Card from 'components/Card';
-import { v4 as uuidv4 } from 'uuid';
+import React from 'react';
 import { getAdverts, getStatusFilter } from 'redux/selectors';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import Card from 'components/Card';
+import { AdvertisementListStyled } from './AdvertisementList.styled';
 
 const AdvertisementList = () => {
   const adverts = useSelector(getAdverts);
-  // const statusFilter = useSelector(getStatusFilter);
-  // const dispatch = useDispatch();
+  const filtered = useSelector(getStatusFilter);
 
-  return (
-    <AdvertisementListStyled>
-      {adverts.map((advertisement) => (
-        <Card key={uuidv4()} advertisement={advertisement} />
-      ))}
-    </AdvertisementListStyled>
-  );
+  if (filtered.length === 0) {
+    return (
+      <AdvertisementListStyled>
+        {adverts.map((advertisement) => (
+          <Card key={uuidv4()} advertisement={advertisement} />
+        ))}
+      </AdvertisementListStyled>
+    );
+  } else {
+    return (
+      <AdvertisementListStyled>
+        {filtered.map((advertisement) => (
+          <Card key={uuidv4()} advertisement={advertisement} />
+        ))}
+      </AdvertisementListStyled>
+    );
+  }
 };
 
 export default AdvertisementList;

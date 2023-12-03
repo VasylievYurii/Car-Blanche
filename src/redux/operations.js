@@ -15,11 +15,11 @@ export const fetchAdverts = createAsyncThunk(
   },
 );
 
-export const addAdvert = createAsyncThunk(
-  'adverts/addAdvert',
-  async (data, thunkAPI) => {
+export const fetchFavorites = createAsyncThunk(
+  'favorites/fetchFavorites',
+  async (_, thunkAPI) => {
     try {
-      const response = await axios.post('/adverts', data);
+      const response = await axios.get('/favorite');
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);
@@ -27,11 +27,24 @@ export const addAdvert = createAsyncThunk(
   },
 );
 
-export const deleteAdvert = createAsyncThunk(
-  'adverts/deleteAdvert',
+export const addFavorite = createAsyncThunk(
+  'favorites/addFavorite',
+  async (data, thunkAPI) => {
+    console.log('data:', data);
+    try {
+      const response = await axios.post('/favorite', data);
+      return response.data;
+    } catch (e) {
+      return thunkAPI.rejectWithValue(e.message);
+    }
+  },
+);
+
+export const deleteFavorite = createAsyncThunk(
+  'favorites/deleteFavorite',
   async (id, thunkAPI) => {
     try {
-      const response = await axios.delete(`/adverts/${id}`);
+      const response = await axios.delete(`/favorite/${id}`);
       return response.data;
     } catch (e) {
       return thunkAPI.rejectWithValue(e.message);

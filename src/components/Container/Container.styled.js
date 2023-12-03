@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const SectionStyled = styled.section`
-  width: 100vw;
-  height: 100vh;
   background-repeat: no-repeat;
   background-position: 80% 30%;
   background-image: ${(props) => props.$backgroundImage || 'none'};
@@ -10,7 +8,9 @@ export const SectionStyled = styled.section`
 `;
 
 export const ContainerStyled = styled.div`
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: 375px;
   margin: 0 auto;
   width: 100%;
@@ -18,12 +18,12 @@ export const ContainerStyled = styled.div`
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 40px;
+  gap: 50px;
 
   @media screen and (min-width: 768px) {
     max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
-    padding-bottom: ${(props) => props.$paddingBottom || '150px'};
     padding-top: ${(props) => props.$paddingTop || '150px'};
   }
 

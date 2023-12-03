@@ -44,8 +44,23 @@ export const ButtonFavorite = styled.button`
 export const FavoriteImg = styled.svg`
   width: 18px;
   height: 18px;
+  fill: var(--color-accent);
+  stroke: var(--color-accent);
+  transition: transform 0.4s var(--timing-function);
+  &:hover {
+    transform: scale(1.1);
+  }
+`;
+
+export const NoFavoriteImg = styled.svg`
+  width: 18px;
+  height: 18px;
   fill: none;
   stroke: rgba(255, 255, 255, 0.8);
+  transition: transform 0.4s var(--timing-function);
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const DescriptionWrapper = styled.div`
@@ -100,6 +115,10 @@ export const Info = styled.p`
     border-right: none;
     padding-right: 0px;
     margin-right: 0px;
+    flex-shrink: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 `;
 
@@ -118,19 +137,12 @@ export const LinkButton = styled.a`
   font-style: normal;
   font-weight: 600;
   line-height: 20px;
-
-  /* display: flex; */
-  /* width: ${(props) => props.size || '100%'}; */
-  /* height: ${(props) => props.size || '44px'}; */
   padding: 12px 99px;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* flex-shrink: 0; */
   border-radius: 12px;
   background-color: var(--color-accent);
   transition: background-color 0.3s var(--timing-function);
   border: none;
-
+  cursor: pointer;
   &:hover {
     background-color: var(--color-hover);
   }

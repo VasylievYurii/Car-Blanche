@@ -4,6 +4,7 @@ import {
   ImgWrapper,
   Img,
   FavoriteImg,
+  NoFavoriteImg,
   ButtonFavorite,
   DescriptionWrapper,
   MainTextWrapper,
@@ -17,6 +18,9 @@ import getSplitArray from 'helpers/getSplitArray';
 import sprite from '../../assets/sprite.svg';
 import Modal from 'components/Modal';
 import CardFull from 'components/CardFull';
+import { getFavorites, getAdverts } from 'redux/selectors';
+import { addFavorite, deleteFavorite } from 'redux/operations';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Card = ({ advertisement }) => {
   const {
@@ -33,7 +37,9 @@ const Card = ({ advertisement }) => {
     rentalCompany,
     address,
   } = advertisement;
-
+  const favorites = useSelector(getFavorites);
+  const adverts = useSelector(getAdverts);
+  const dispatch = useDispatch();
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -43,6 +49,22 @@ const Card = ({ advertisement }) => {
   let spliterForAddress = ', ';
   let addressArray = getSplitArray(address, spliterForAddress);
 
+  const handleFavorite = () => {
+    console.log('id:', id);
+    const favorite = favorites.find((object) => {
+      console.log('object:', object.id);
+      return object.id === id;
+    });
+    console.log('favorite:', favorite);
+    const advert = adverts.find((object) => object.id === id);
+    if (!favorite) {
+      dispatch(addFavorite(advert));
+      console.log('added');
+    } else {
+      dispatch(deleteFavorite(favorite._id));
+    }
+  };
+  const isFavorite = favorites.some((object) => object.id === id);
   return (
     <CardWrapper>
       <ImgWrapper>
@@ -52,10 +74,16 @@ const Card = ({ advertisement }) => {
         </NoImage>
       </ImgWrapper>
 
-      <ButtonFavorite type="button">
-        <FavoriteImg>
-          <use href={`${sprite}#icon-favorite`} />
-        </FavoriteImg>
+      <ButtonFavorite type="button" onClick={handleFavorite}>
+        {isFavorite ? (
+          <FavoriteImg>
+            <use href={`${sprite}#icon-favorite`} />
+          </FavoriteImg>
+        ) : (
+          <NoFavoriteImg>
+            <use href={`${sprite}#icon-nofavorite`} />
+          </NoFavoriteImg>
+        )}
       </ButtonFavorite>
       <DescriptionWrapper>
         <MainTextWrapper>
