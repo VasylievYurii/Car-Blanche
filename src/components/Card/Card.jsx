@@ -1,5 +1,4 @@
-import React from 'react';
-import Button from 'components/Button';
+import React, { useState } from 'react';
 import {
   CardWrapper,
   ImgWrapper,
@@ -12,9 +11,12 @@ import {
   InfoWrapper,
   Info,
   NoImage,
+  LinkButton,
 } from './Card.styled';
-import getAddressArray from 'helpers/getAddressArray';
+import getSplitArray from 'helpers/getSplitArray';
 import sprite from '../../assets/sprite.svg';
+import Modal from 'components/Modal';
+import CardFull from 'components/CardFull';
 
 const Card = ({ advertisement }) => {
   const {
@@ -25,18 +27,21 @@ const Card = ({ advertisement }) => {
     type,
     img,
     description,
-    // fuelConsumption,
-    // engineSize,
     accessories,
     functionalities,
     rentalPrice,
     rentalCompany,
     address,
-    // rentalConditions,
-    // mileage,
   } = advertisement;
 
-  let addressArray = getAddressArray(address);
+  const [showModal, setShowModal] = useState(false);
+
+  const toggleModal = () => {
+    setShowModal((prevState) => !prevState);
+  };
+
+  let spliterForAddress = ', ';
+  let addressArray = getSplitArray(address, spliterForAddress);
 
   return (
     <CardWrapper>
@@ -73,7 +78,7 @@ const Card = ({ advertisement }) => {
             <Info>{rentalCompany}</Info>
           )}
 
-          {id === 9587 || id === 9597 || id === 9598 ? null : (
+          {id === '9587' || id === '9597' || id === '9598' ? null : (
             <Info>Premium</Info>
           )}
         </InfoWrapper>
@@ -88,7 +93,12 @@ const Card = ({ advertisement }) => {
           )}
         </InfoWrapper>
       </DescriptionWrapper>
-      <Button>Learn More</Button>
+      <LinkButton onClick={toggleModal}>Learn More</LinkButton>
+      {showModal && (
+        <Modal onClick={toggleModal}>
+          <CardFull id={id} />
+        </Modal>
+      )}
     </CardWrapper>
   );
 };

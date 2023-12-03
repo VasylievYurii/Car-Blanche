@@ -1,8 +1,12 @@
 import React from 'react';
 import { ButtonStyled } from './Button.styled';
 
-const Button = ({ children }) => {
-  return <ButtonStyled type="button">{children}</ButtonStyled>;
+const Button = ({ padding, children }) => {
+  return (
+    <ButtonStyled type="button" $padding={padding}>
+      {children}
+    </ButtonStyled>
+  );
 };
 
 export default Button;

@@ -9,9 +9,8 @@ export const ButtonStyled = styled.button`
   line-height: 20px;
 
   display: flex;
-  width: ${(props) => props.size || '274px'};
-  height: ${(props) => props.size || '44px'};
-  padding: 12px 99px;
+  width: fit-content;
+  padding: ${(props) => props.$padding || '14px 44px'};
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
