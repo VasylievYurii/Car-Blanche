@@ -17,8 +17,8 @@ export const LinkStyled = styled(Link)`
   line-height: 20px;
 
   display: flex;
-  width: ${(props) => props.size || '100px'};
-  height: ${(props) => props.size || '28px'};
+  width: fit-content;
+  height: auto;
   padding: 12px 99px;
   justify-content: center;
   align-items: center;
