@@ -28,19 +28,15 @@ export const Img = styled.img`
 `;
 
 export const MainText = styled.h2`
-  color: #121417;
-  font-family: Manrope;
+  color: var(--color-text-main);
   font-size: 18px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 8px;
 
   > span {
-    color: #3470ff;
-    font-family: Manrope;
+    color: var(--color-accent);
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px;
   }
@@ -58,9 +54,7 @@ export const DescriptionWrapper = styled.ul`
 
 export const DescriptionText = styled.li`
   color: var(--color-text-prescription);
-  font-family: Manrope;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   padding-right: 6px;
@@ -76,20 +70,14 @@ export const DescriptionText = styled.li`
 `;
 
 export const AboutText = styled.p`
-  color: #121417;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
+  color: var(--color-text-main);
   font-weight: 400;
   line-height: 20px;
   margin-top: 14px;
 `;
 
 export const AboutMoreTitle = styled.h3`
-  color: #121417;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
+  color: var(--color-text-main);
   font-weight: 500;
   line-height: 20px;
   padding-bottom: 8px;
@@ -112,31 +100,22 @@ export const RentalItem = styled.li`
 
 export const RentalInfo = styled.p`
   color: #363535;
-  font-family: Manrope;
+  font-family: Montserrat;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  line-height: 18px;
-
+  line-height: 18px; /* 150% */
+  letter-spacing: -0.24px;
   > span {
-    color: #3470ff;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
+    color: var(--color-accent);
     font-weight: 600;
-    line-height: 18px;
-    letter-spacing: -0.24px;
   }
 `;
 
 export const ButtonLink = styled.a`
   color: var(--color-main);
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 20px;
-
   display: flex;
   width: fit-content;
   padding: 12px 50px;

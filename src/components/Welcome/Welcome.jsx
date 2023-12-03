@@ -14,7 +14,7 @@ const Welcome = () => {
       <Logo>CarBlanche</Logo>
       <Wrapper>
         <MainText>
-          We are the best sale <p>car website</p>
+          We are the best rental <p>car website</p>
         </MainText>
         <MainDescription>
           Where your dream ride awaits among premium advertisements.

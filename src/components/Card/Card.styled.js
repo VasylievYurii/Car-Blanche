@@ -77,9 +77,7 @@ export const MainTextWrapper = styled.div`
 
 export const MainText = styled.h2`
   color: var(--color-text-main);
-  font-family: Manrope;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
 
@@ -101,9 +99,7 @@ export const InfoWrapper = styled.div`
 
 export const Info = styled.p`
   color: var(--color-text-prescription);
-  font-family: Manrope;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
   line-height: 18px;
   padding-right: 6px;
@@ -132,9 +128,6 @@ export const NoImage = styled.svg`
 export const LinkButton = styled.a`
   display: block;
   color: var(--color-main);
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 20px;
   padding: 12px 99px;

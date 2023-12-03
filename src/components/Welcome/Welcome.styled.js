@@ -10,9 +10,6 @@ export const WelcomeWrapper = styled.div`
 
 export const LinkStyled = styled(Link)`
   color: var(--color-main);
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 20px;
 
@@ -39,7 +36,7 @@ export const Logo = styled.p`
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
-  color: #03045e;
+  color: var(--color-accent);
   flex: 1;
 `;
 

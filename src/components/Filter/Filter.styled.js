@@ -11,21 +11,15 @@ export const Label = styled.label`
   flex-direction: column;
   gap: 8px;
   color: #8a8a89;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 500;
   line-height: 18px;
 `;
 
 export const Select = styled.select`
-  color: #121417;
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
+  color: var(--color-text-main);
   font-weight: 500;
   line-height: 20px;
-
+  font-family: Manrope;
   padding-top: 14px;
   padding-bottom: 14px;
   padding-left: 18px;

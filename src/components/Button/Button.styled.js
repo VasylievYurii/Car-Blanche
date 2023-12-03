@@ -2,9 +2,6 @@ import styled from 'styled-components';
 
 export const ButtonStyled = styled.button`
   color: var(--color-main);
-  font-family: Manrope;
-  font-size: 14px;
-  font-style: normal;
   font-weight: 600;
   line-height: 20px;
 
